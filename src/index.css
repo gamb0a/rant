@@ -1,6 +1,9 @@
+import 'antd/dist/antd.less';
+
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 .trigger {
@@ -8,7 +11,7 @@ body {
   line-height: 64px;
   padding: 0 24px;
   cursor: pointer;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .trigger:hover {
@@ -17,6 +20,6 @@ body {
 
 .logo {
   height: 32px;
-  background: rgba(255,255,255,.2);
+  background: rgba(255, 255, 255, 0.2);
   margin: 16px;
 }

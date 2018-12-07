@@ -19,25 +19,25 @@ const LoginComponent = ({ loading, form, loginRequest }) => {
 
     return (
         <Row type="flex" style={{ height: '100vh' }} justify="space-around" align="middle">
-            <Col span={10}>
+            <Col xs={{span: 16}} lg={{span: 10}} xl={{span: 8}}>
                 <Form onSubmit={tryLogin} className="login-form">
                     <FormItem>
                         {getFieldDecorator('rut', {
                             rules: [{ required: true, message: 'Rut inválido!' }],
                         })(
-                            <Input disabled={loading} prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Rut" />
+                            <Input size="large" disabled={loading} prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Rut" />
                         )}
                     </FormItem>
                     <FormItem>
                         {getFieldDecorator('password', {
                             rules: [{ required: true, message: 'Debe ingresar una contraseña' }],
                         })(
-                            <Input disabled={loading} prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Contraseña" type="password" />
+                            <Input size="large" disabled={loading} prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Contraseña" type="password" />
                         )}
                     </FormItem>
                     <FormItem>
                         <p className="login-form-forgot">Olvidó su contraseña?</p>
-                        <Button type="primary" htmlType="submit" className="login-form-button" loading={loading}>
+                        <Button size="large" type="primary" htmlType="submit" className="login-form-button" block loading={loading}>
                             Ingresar
                     </Button>
                     </FormItem>

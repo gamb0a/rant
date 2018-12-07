@@ -1,5 +1,11 @@
-@import '~antd/dist/antd.css';
-
 .ant-layout {
     min-height: 100vh;
+}
+
+.ant-input, .ant-btn-lg, .ant-btn {
+    border-radius: 2px;
+}
+
+.ant-form-explain {
+    margin-top: 6px;
 }
