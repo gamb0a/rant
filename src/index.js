@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
-import reducers from './lib/redux/reducers';
-
-import './index.css';
-import Admin from './lib/Admin';
-import * as serviceWorker from './serviceWorker';
-
 import createSagaMiddleware from 'redux-saga'
+import * as serviceWorker from './serviceWorker';
+import './index.less';
+import reducers from './lib/redux/reducers';
+import Admin from './lib/Admin';
 import LoginSaga from './lib/sagas/Login';
 
 const sagaMiddleware = createSagaMiddleware();

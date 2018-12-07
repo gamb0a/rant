@@ -1,0 +1,53 @@
+@import '~antd/dist/antd.less';
+
+// https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+
+@color_green: #03A60B; 
+@color_blue: #1D1C75; 
+@color_red: #F24700; 
+@color_muted: #FFFFFF; 
+@color_lighblue: #1DB9D8; 
+
+@primary-color : @color_lighblue;
+@info-color : @color_blue;
+@success-color : @color_green;
+@processing-color : @color_lighblue;
+@error-color : @color_red;
+@highlight-color : @color_red;
+@warning-color : @gold-6;
+@normal-color : @color_muted;
+
+@font-family: 'Muli', sans-serif;
+@border-radius-base : 2px;
+@border-radius-sm : 2px;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.trigger:hover {
+    color: #1890ff;
+}
+
+.logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+}
+
+.ant-layout {
+    min-height: 100vh;
+}
+
+.ant-form-explain {
+    margin-top: 6px;
+}

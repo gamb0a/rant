@@ -1,5 +1,4 @@
 
-import './Admin.css';
 import React from "react";
 import PropTypes from 'prop-types'
 import { UserComponent, DashboardComponent, SesionesComponent } from "./components";
